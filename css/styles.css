@@ -38,23 +38,37 @@ body.dark-mode {
     text-shadow: 0 0 10px var(--accent-glow);
 }
 
+/* Updated Navigation Tabs with subtle borders and lighting effects */
+.nav-links {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
 .nav-links a {
     color: var(--text-secondary);
     text-decoration: none;
-    margin-left: 30px;
-    font-size: 0.95rem;
-    transition: color 0.3s;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    background-color: rgba(22, 27, 34, 0.5);
+    border: 1px solid rgba(240, 246, 252, 0.1); /* Subtle light white border */
+    transition: all 0.3s ease;
 }
 
 .nav-links a:hover, .cta-button-nav {
-    color: var(--accent-pink);
+    color: var(--text-primary);
+    border-color: var(--accent-pink); /* Shifts to matching neon pink border on hover */
+    background-color: var(--card-bg);
+    box-shadow: 0 0 12px var(--accent-glow);
 }
 
 section {
     padding: 80px 20px;
     max-width: 1000px;
     margin: 0 auto;
-    border-bottom: 1px solid rgba(48, 54, 61, 0.4); /* Clean divider borders between sections */
+    border-bottom: 1px solid rgba(48, 54, 61, 0.4);
 }
 
 .hero-section {
