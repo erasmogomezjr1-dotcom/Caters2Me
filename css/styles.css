@@ -1,224 +1,120 @@
-:root {
-    --bg-color: #0d0f12;          /* Deep rich charcoal background */
-    --card-bg: #161b22;           /* Slightly lighter charcoal for cards */
-    --text-primary: #f0f6fc;      /* Bright clean white text */
-    --text-secondary: #8b949e;    /* Muted gray text */
-    --accent-pink: #ff66cc;       /* Signature neon pink accent */
-    --accent-glow: rgba(255, 102, 204, 0.2); /* Soft pink glow */
-    --border-color: #30363d;      /* Crisp professional structural border */
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caters2Me.com | Operational Leadership & Technical Management</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="dark-mode">
 
-body.dark-mode {
-    background-color: var(--bg-color);
-    color: var(--text-primary);
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-}
+    <!-- HEADER NAVIGATION -->
+    <header class="site-header">
+        <div class="logo-container">
+            <span class="brand-name">Caters2Me.com</span>
+        </div>
+        <nav class="nav-links">
+            <a href="#about">About</a>
+            <a href="#capabilities">Capabilities</a>
+            <a href="#sectors">Sectors</a>
+            <a href="#credentials">Credentials</a>
+            <!-- Quick Call Header Button with Phone Icon -->
+            <a href="tel:8338053005" class="nav-phone-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -2px; margin-right: 6px;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                (833) 805-3005
+            </a>
+            <a href="#contact" class="cta-button-nav">Contact Us</a>
+        </nav>
+    </header>
 
-.site-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
-    border-bottom: 1px solid var(--border-color);
-    background: rgba(13, 15, 18, 0.85);
-    backdrop-filter: blur(10px);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
+    <!-- SECTION 1: HERO -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Engineering Precision. Directing Complex Operations.</h1>
+            <p>Caters 2 Me Management (Caters2Me.com) bridges industrial supply chain logistics, systems integration, and institutional facility management with disciplined, high-performance leadership.</p>
+            <div class="hero-buttons">
+                <a href="#credentials" class="btn primary">View Government Capabilities</a>
+                <a href="#contact" class="btn secondary">Partner With Us</a>
+            </div>
+        </div>
+    </section>
 
-.brand-name {
-    font-weight: 700;
-    font-size: 1.2rem;
-    letter-spacing: 1.5px;
-    color: var(--text-primary);
-    text-shadow: 0 0 10px var(--accent-glow);
-}
+    <!-- SECTION 2: ABOUT US -->
+    <section id="about" class="about-section">
+        <h2>Built on Discipline. Driven by Systems.</h2>
+        <p>Headquartered in Lansing, Illinois, <strong>Caters 2 Me Management LLC</strong> is an operationally driven management and leadership firm. We transform complex, high-tempo environments through rigorous process optimization, enterprise systems integration, and disciplined workforce development[cite: 1].</p>
+        <p>Led by hands-on technical operations professionals with over 18 years of cross-industry experience spanning heavy logistics, supply chain networks, automated infrastructure, and institutional hospitality, we engineer frameworks that guarantee flawless daily execution[cite: 1].</p>
+    </section>
 
-/* Updated Navigation Tabs with subtle borders and lighting effects */
-.nav-links {
-    display: flex;
-    gap: 12px;
-    align-items: center;
-}
+    <!-- SECTION 3: CORE CAPABILITIES -->
+    <section id="capabilities" class="capabilities-section">
+        <h2>Core Capabilities & Technical Mastery</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3>Systems & Enterprise Architecture</h3>
+                <p>Leveraging advanced proficiency in Transportation Management Systems (TMS), Terminal Management Software, SQL data querying, Tableau analytics, and enterprise platforms[cite: 1].</p>
+            </div>
+            <div class="card">
+                <h3>Process Optimization & Methodologies</h3>
+                <p>Deployment of <strong>Six Sigma Black Belt (DMAIC)</strong> principles, <strong>Agile Scrum</strong> frameworks, and <strong>ISO 9001</strong> internal auditing standards to eliminate bottlenecks, minimize waste, and maximize throughput[cite: 1].</p>
+            </div>
+            <div class="card">
+                <h3>Industrial Infrastructure & Facility Management</h3>
+                <p>Directing multi-unit facility engineering, HVAC, electrical, security hardware, surveillance camera networks, and commercial kitchen/food service systems to ensure 100% operational uptime[cite: 1].</p>
+            </div>
+        </div>
+    </section>
 
-.nav-links a {
-    color: var(--text-secondary);
-    text-decoration: none;
-    padding: 8px 16px;
-    border-radius: 6px;
-    font-size: 0.9rem;
-    font-weight: 500;
-    background-color: rgba(22, 27, 34, 0.5);
-    border: 1px solid rgba(240, 246, 252, 0.1); /* Subtle light white border */
-    transition: all 0.3s ease;
-}
+    <!-- SECTION 4: SECTORS OF EXECUTION -->
+    <section id="sectors" class="sectors-section">
+        <h2>Sectors of Execution</h2>
+        <ul>
+            <li><strong>Institutional Food Service & Concessions:</strong> High-volume dining operations, mobile food vending, and cafeteria management backed by strict ServSafe and health compliance standards.</li>
+            <li><strong>Supply Chain & Logistics Support:</strong> Cross-dock material handling, yard asset coordination, freight routing efficiency, and equipment safety compliance (DOT, FMCSA, OSHA, HAZMAT)[cite: 1].</li>
+            <li><strong>Workforce Training & Leadership:</strong> Designing automated labor scheduling systems and structured coaching pipelines that elevate front-line personnel into accountable operating teams[cite: 1].</li>
+        </ul>
+    </section>
 
-.nav-links a:hover, .cta-button-nav {
-    color: var(--text-primary);
-    border-color: var(--accent-pink); /* Shifts to matching neon pink border on hover */
-    background-color: var(--card-bg);
-    box-shadow: 0 0 12px var(--accent-glow);
-}
+    <!-- SECTION 5: CORPORATE CREDENTIALS -->
+    <section id="credentials" class="credentials-section">
+        <h2>Corporate Credentials & Compliance</h2>
+        <div class="badge-grid">
+            <span>Entity Status: Active Illinois LLC[cite: 1]</span>
+            <span>Federal Standing: Active SAM.gov (UEI: V28USH2BDXL7)[cite: 1]</span>
+            <span>Primary NAICS: 722310, 541611, 541614, 561210</span>
+            <span>Certifications: Six Sigma Black Belt | Agile Scrum Master | AWS Cloud | ISO 9001 | ServSafe | BASSET[cite: 1]</span>
+        </div>
+    </section>
 
-section {
-    padding: 80px 20px;
-    max-width: 1000px;
-    margin: 0 auto;
-    border-bottom: 1px solid rgba(48, 54, 61, 0.4);
-}
+    <!-- SECTION 6: CONTACT & PROCUREMENT -->
+    <section id="contact" class="contact-section">
+        <h2>Partner With Our Team</h2>
+        <p>Ready to discuss contract opportunities, agency solicitations, or institutional management solutions? Get in touch with our leadership team today.</p>
+        
+        <div class="contact-info">
+            <!-- Highlighted Clickable Phone Link with Icon -->
+            <p><strong>Phone:</strong> <a href="tel:8338053005" style="color: var(--accent-pink); text-decoration: none; font-weight: 600;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -2px; margin-right: 4px;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>(833) 805-3005</a>[cite: 1]</p>
+            <p><strong>Email:</strong> Jrgomez@caters2me.com[cite: 1]</p>
+            <p><strong>Location:</strong> Lansing, Illinois 60438[cite: 1]</p>
+        </div>
 
-.hero-section {
-    text-align: center;
-    padding: 140px 20px 100px 20px;
-}
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="text" placeholder="Organization / Agency" required>
+            <input type="email" placeholder="Email Address" required>
+            <textarea placeholder="Message / Scope" rows="5" required></textarea>
+            <button type="submit" class="btn primary">Submit Secure Inquiry</button>
+        </form>
+    </section>
 
-.hero-section h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    letter-spacing: -0.5px;
-}
+    <!-- FOOTER WITH REQUIRED PRIVACY & SMS TERMS -->
+    <footer>
+        <p>&copy; 2026 Caters 2 Me Management LLC (Caters2Me.com). All Rights Reserved.[cite: 1]</p>
+        <p>UEI: V28USH2BDXL7 | SAM.gov Active Vendor[cite: 1]</p>
+        <div class="privacy-disclaimer" style="font-size: 0.75rem; color: #8b949e; margin-top: 20px; line-height: 1.5; max-width: 800px; margin-left: auto; margin-right: auto;">
+            <p>By providing your contact information, you agree to receive communications, updates, or text messages from Caters 2 Me Management LLC. Message and data rates may apply. You can review our full terms and privacy policy details <a href="https://conversations.godaddy.com/policies/tos/65685e28-bb03-11f1-873e-3cfdfe75eb81" target="_blank" style="color: var(--accent-pink); text-decoration: underline;">here</a>. No mobile information will be shared with third parties/affiliates for marketing/promotional purposes.</p>
+        </div>
+    </footer>
 
-.hero-section p {
-    font-size: 1.2rem;
-    color: var(--text-secondary);
-    max-width: 700px;
-    margin: 0 auto 40px auto;
-}
-
-.hero-buttons {
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.btn {
-    padding: 14px 28px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 600;
-    display: inline-block;
-    transition: all 0.3s ease;
-}
-
-.btn.primary {
-    background-color: var(--accent-pink);
-    color: #0d0f12;
-    box-shadow: 0 0 20px var(--accent-glow);
-}
-
-.btn.primary:hover {
-    background-color: #ff33bb;
-    transform: translateY(-2px);
-}
-
-.btn.secondary {
-    background-color: var(--card-bg);
-    color: var(--text-primary);
-    border: 1px solid var(--border-color);
-}
-
-.btn.secondary:hover {
-    border-color: var(--accent-pink);
-    transform: translateY(-2px);
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
-    margin-top: 40px;
-}
-
-.card {
-    background-color: var(--card-bg);
-    border: 1px solid var(--border-color);
-    padding: 35px;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-}
-
-.card:hover {
-    border-color: var(--accent-pink);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-    transform: translateY(-3px);
-}
-
-.card h3 {
-    margin-top: 0;
-    color: var(--text-primary);
-}
-
-.card p, .about-section p, .sectors-section li {
-    color: var(--text-secondary);
-}
-
-.sectors-section ul {
-    list-style: none;
-    padding: 0;
-}
-
-.sectors-section li {
-    background-color: var(--card-bg);
-    border: 1px solid var(--border-color);
-    padding: 20px;
-    margin-bottom: 15px;
-    border-radius: 6px;
-}
-
-.badge-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-top: 25px;
-}
-
-.badge-grid span {
-    background-color: var(--card-bg);
-    border: 1px solid var(--border-color);
-    padding: 10px 18px;
-    border-radius: 20px;
-    font-size: 0.9rem;
-    color: var(--text-primary);
-}
-
-.contact-section {
-    background: linear-gradient(180deg, var(--bg-color) 0%, var(--card-bg) 100%);
-    border: 1px solid var(--border-color);
-    border-radius: 12px;
-    margin: 60px auto;
-    padding: 60px 40px;
-}
-
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    max-width: 600px;
-    margin: 30px auto 0 auto;
-}
-
-.contact-form input, .contact-form textarea {
-    background-color: var(--bg-color);
-    border: 1px solid var(--border-color);
-    padding: 14px;
-    border-radius: 6px;
-    color: var(--text-primary);
-    font-family: inherit;
-}
-
-.contact-form input:focus, .contact-form textarea:focus {
-    outline: none;
-    border-color: var(--accent-pink);
-}
-
-footer {
-    text-align: center;
-    padding: 40px;
-    color: var(--text-secondary);
-    font-size: 0.9rem;
-}
+</body>
+</html>
