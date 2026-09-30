@@ -1,11 +1,11 @@
 :root {
-    --bg-color: #121212;
-    --card-bg: #1e1e1e;
-    --text-primary: #f0f0f0;
-    --text-secondary: #aaaaaa;
-    --accent-pink: #ff66cc;
-    --accent-glow: rgba(255, 102, 204, 0.25);
-    --border-color: #333333;
+    --bg-color: #0d0f12;          /* Deep rich charcoal background */
+    --card-bg: #161b22;           /* Slightly lighter charcoal for cards */
+    --text-primary: #f0f6fc;      /* Bright clean white text */
+    --text-secondary: #8b949e;    /* Muted gray text */
+    --accent-pink: #ff66cc;       /* Signature neon pink accent */
+    --accent-glow: rgba(255, 102, 204, 0.2); /* Soft pink glow */
+    --border-color: #30363d;      /* Crisp professional structural border */
 }
 
 body.dark-mode {
@@ -23,27 +23,26 @@ body.dark-mode {
     align-items: center;
     padding: 20px 50px;
     border-bottom: 1px solid var(--border-color);
-    background: var(--bg-color);
+    background: rgba(13, 15, 18, 0.85);
+    backdrop-filter: blur(10px);
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
-.nav-logo {
-    height: 40px;
-    filter: drop-shadow(0 0 8px var(--accent-pink));
-}
-
 .brand-name {
     font-weight: 700;
-    margin-left: 10px;
-    letter-spacing: 1px;
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
+    color: var(--text-primary);
+    text-shadow: 0 0 10px var(--accent-glow);
 }
 
 .nav-links a {
     color: var(--text-secondary);
     text-decoration: none;
     margin-left: 30px;
+    font-size: 0.95rem;
     transition: color 0.3s;
 }
 
@@ -55,67 +54,157 @@ section {
     padding: 80px 20px;
     max-width: 1000px;
     margin: 0 auto;
+    border-bottom: 1px solid rgba(48, 54, 61, 0.4); /* Clean divider borders between sections */
 }
 
 .hero-section {
     text-align: center;
-    padding: 120px 20px;
+    padding: 140px 20px 100px 20px;
 }
 
 .hero-section h1 {
     font-size: 3rem;
     margin-bottom: 20px;
+    letter-spacing: -0.5px;
 }
 
 .hero-section p {
     font-size: 1.2rem;
     color: var(--text-secondary);
     max-width: 700px;
-    margin: 0 auto 30px auto;
+    margin: 0 auto 40px auto;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .btn {
-    padding: 12px 25px;
-    border-radius: 4px;
+    padding: 14px 28px;
+    border-radius: 6px;
     text-decoration: none;
     font-weight: 600;
     display: inline-block;
-    transition: all 0.3s;
+    transition: all 0.3s ease;
 }
 
 .btn.primary {
     background-color: var(--accent-pink);
-    color: #121212;
-    box-shadow: 0 0 15px var(--accent-glow);
+    color: #0d0f12;
+    box-shadow: 0 0 20px var(--accent-glow);
 }
 
 .btn.primary:hover {
     background-color: #ff33bb;
+    transform: translateY(-2px);
+}
+
+.btn.secondary {
+    background-color: var(--card-bg);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+}
+
+.btn.secondary:hover {
+    border-color: var(--accent-pink);
+    transform: translateY(-2px);
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
+    gap: 25px;
     margin-top: 40px;
 }
 
 .card {
     background-color: var(--card-bg);
     border: 1px solid var(--border-color);
-    padding: 30px;
+    padding: 35px;
     border-radius: 8px;
-    transition: border-color 0.3s;
+    transition: all 0.3s ease;
 }
 
 .card:hover {
+    border-color: var(--accent-pink);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    transform: translateY(-3px);
+}
+
+.card h3 {
+    margin-top: 0;
+    color: var(--text-primary);
+}
+
+.card p, .about-section p, .sectors-section li {
+    color: var(--text-secondary);
+}
+
+.sectors-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sectors-section li {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+}
+
+.badge-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.badge-grid span {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    padding: 10px 18px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: var(--text-primary);
+}
+
+.contact-section {
+    background: linear-gradient(180deg, var(--bg-color) 0%, var(--card-bg) 100%);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    margin: 60px auto;
+    padding: 60px 40px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 30px auto 0 auto;
+}
+
+.contact-form input, .contact-form textarea {
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    padding: 14px;
+    border-radius: 6px;
+    color: var(--text-primary);
+    font-family: inherit;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    outline: none;
     border-color: var(--accent-pink);
 }
 
 footer {
     text-align: center;
     padding: 40px;
-    border-top: 1px solid var(--border-color);
     color: var(--text-secondary);
     font-size: 0.9rem;
 }
